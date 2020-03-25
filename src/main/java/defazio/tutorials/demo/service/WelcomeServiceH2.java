@@ -11,6 +11,6 @@ public class WelcomeServiceH2 implements WelcomeService {
     private String propYaml;
     @Override
     public String welcome() {
-        return "H2 database"+propYaml;
+        return "Profile: default database:H2 yaml:"+propYaml;
     }
 }

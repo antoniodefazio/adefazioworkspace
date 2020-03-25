@@ -11,6 +11,6 @@ public class WelcomeServiceDocker implements WelcomeService {
     private String propYaml;
     @Override
     public String welcome() {
-        return "Docker database"+propYaml;
+        return "Profile docker database: MYSQL yaml:"+propYaml;
     }
 }

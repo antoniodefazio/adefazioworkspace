@@ -8,7 +8,7 @@ spring:
     username: root
     password:
 prop:
-  yaml: mysqlYaml
+  yaml: MYSQLYaml
 ---
 spring:
   profiles: docker

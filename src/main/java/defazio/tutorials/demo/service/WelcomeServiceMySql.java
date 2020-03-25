@@ -11,6 +11,6 @@ public class WelcomeServiceMySql implements WelcomeService{
     private String propYaml;
     @Override
     public String welcome() {
-         return "MYSQL Database"+propYaml;
+         return "Profile mysql database: MYSQL yml:"+propYaml;
     }
 }
