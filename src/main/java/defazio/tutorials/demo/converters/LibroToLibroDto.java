@@ -1,7 +1,8 @@
 package defazio.tutorials.demo.converters;
 
 import defazio.tutorials.demo.dto.LibroDto;
-import defazio.tutorials.demo.models.Libro;
+import defazio.tutorials.demo.entities.Libro;
+
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package defazio.tutorials.demo.models;
+package defazio.tutorials.demo.entities;
 
 import javax.persistence.*;
 import java.util.HashSet;

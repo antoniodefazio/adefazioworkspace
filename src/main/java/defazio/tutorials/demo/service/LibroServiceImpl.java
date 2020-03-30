@@ -3,8 +3,8 @@ package defazio.tutorials.demo.service;
 import defazio.tutorials.demo.converters.LibroToLibroDto;
 import defazio.tutorials.demo.dto.AutoreDto;
 import defazio.tutorials.demo.dto.LibroDto;
-import defazio.tutorials.demo.models.Autore;
-import defazio.tutorials.demo.models.Libro;
+import defazio.tutorials.demo.entities.Autore;
+import defazio.tutorials.demo.entities.Libro;
 import defazio.tutorials.demo.repositories.LibroRepository;
 import org.springframework.stereotype.Service;
 

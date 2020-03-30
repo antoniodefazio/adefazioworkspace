@@ -2,7 +2,8 @@ package defazio.tutorials.demo.converters;
 
 
 import defazio.tutorials.demo.dto.AutoreDto;
-import defazio.tutorials.demo.models.Autore;
+import defazio.tutorials.demo.entities.Autore;
+
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

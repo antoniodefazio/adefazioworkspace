@@ -2,7 +2,7 @@ package defazio.tutorials.demo.service;
 
 import defazio.tutorials.demo.converters.AutoreToAutoreDto;
 import defazio.tutorials.demo.dto.AutoreDto;
-import defazio.tutorials.demo.models.Autore;
+import defazio.tutorials.demo.entities.Autore;
 import defazio.tutorials.demo.repositories.AutoreRepository;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,8 @@
 package defazio.tutorials.demo.repositories;
 
-import defazio.tutorials.demo.models.Libro;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import defazio.tutorials.demo.entities.Libro;
 
 
 

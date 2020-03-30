@@ -1,7 +1,7 @@
 package defazio.tutorials.demo.bootstrap;
 
-import defazio.tutorials.demo.models.Autore;
-import defazio.tutorials.demo.models.Libro;
+import defazio.tutorials.demo.entities.Autore;
+import defazio.tutorials.demo.entities.Libro;
 import defazio.tutorials.demo.repositories.AutoreRepository;
 import defazio.tutorials.demo.repositories.LibroRepository;
 import org.springframework.context.ApplicationListener;
