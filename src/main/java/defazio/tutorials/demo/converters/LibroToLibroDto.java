@@ -13,11 +13,15 @@ public class LibroToLibroDto implements Converter<Libro, LibroDto> {
 public LibroDto convert(Libro libro){
     if(libro==null){ return null;}
     final LibroDto libroDto=new LibroDto();
-    libroDto.setCasaEditrice(libro.getCasaEditrice());
-    libroDto.setIsbn(libro.getIsbn());
-    libroDto.setTitolo(libro.getTitolo());
+    extractor(libro, libroDto);
     return libroDto;
 
 }
+
+	public void extractor(Libro libro, final LibroDto libroDto) {
+		libroDto.setCasaEditrice(libro.getCasaEditrice());
+		libroDto.setIsbn(libro.getIsbn());
+		libroDto.setTitolo(libro.getTitolo());
+	}
 
 }

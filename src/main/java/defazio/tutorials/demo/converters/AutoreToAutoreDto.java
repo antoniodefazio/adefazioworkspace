@@ -14,8 +14,12 @@ public class AutoreToAutoreDto implements Converter<Autore, AutoreDto> {
     public AutoreDto convert(Autore autore){
         if(autore==null){return null;}
         final AutoreDto autoreDto=new AutoreDto();
-        autoreDto.setName(autore.getName());
-        autoreDto.setSurname(autore.getSurname());
+        extraction(autore, autoreDto);
         return autoreDto;
     }
+
+	public void extraction(Autore autore, final AutoreDto autoreDto) {
+		autoreDto.setName(autore.getNome());
+        autoreDto.setSurname(autore.getCognome());
+	}
 }

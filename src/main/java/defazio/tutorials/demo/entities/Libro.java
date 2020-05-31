@@ -1,52 +1,41 @@
 package defazio.tutorials.demo.entities;
 
 import javax.persistence.*;
+
+
+
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 @Entity
-public class Libro {
+public class Libro extends BaseEntityLongId{
 
-    private String titolo;
+    
+	public Libro() {
+		super();
+	}
+    
+
+ public Libro(String titolo, String isbn, String casaEditrice) {
+		super();
+		this.titolo = titolo;
+		this.isbn = isbn;
+		this.casaEditrice = casaEditrice;
+	}
+
+
+	private static final long serialVersionUID = 1L;
+	private String titolo;
     private String isbn;
     private String casaEditrice;
     @ManyToMany
     @JoinTable(name="autore_libri", joinColumns=@JoinColumn(name="libri_id"),
     inverseJoinColumns = @JoinColumn(name="autore_id"))
     private Set<Autore> autori=new HashSet<>();
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+   
 
-    public Long getId() {
-        return id;
-    }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Libro libro = (Libro) o;
-        return Objects.equals(id, libro.id);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Libro(){}
-    public Libro(String titolo, String isbn, String casaEditrice) {
-        this.titolo = titolo;
-        this.isbn = isbn;
-        this.casaEditrice = casaEditrice;
-    }
-
-    public String getTitolo() {
+public String getTitolo() {
         return titolo;
     }
 
@@ -78,12 +67,7 @@ public class Libro {
         this.autori = autori;
     }
 
-    public Libro(String titolo, String isbn, String casaEditrice, Set<Autore> autori) {
-        this.titolo = titolo;
-        this.isbn = isbn;
-        this.casaEditrice = casaEditrice;
-        this.autori = autori;
-    }
+ 
 
     @Override
     public String toString() {

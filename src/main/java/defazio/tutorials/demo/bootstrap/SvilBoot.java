@@ -21,14 +21,15 @@ public class SvilBoot implements ApplicationListener<ContextRefreshedEvent> {
     }
 
     private void inizializzaDb(){
-        Autore nuseba=new Autore("Nora","Rosssi");
-        Libro b1=new Libro("Design","12345","Riad PrintHouse");
+    	Autore nuseba=new Autore("Nssy","Rossi");
+    
+        Libro b1=new Libro("Design Book",null,"Riad House");
         nuseba.getLibri().add(b1);
         b1.getAutori().add(nuseba);
         autoreRepository.save(nuseba);
         libroRepository.save(b1);
-        Autore nba2=new Autore("Antonio","De Fazio");
-        Libro b2=new Libro("IT Design","12346","Milano PrintHouse");
+        Autore nba2=new Autore("Antonio","Bianchi");
+        Libro b2=new Libro("It Book",null,"Apogeo");
         nba2.getLibri().add(b2);
         b2.getAutori().add(nba2);
         autoreRepository.save(nba2);
